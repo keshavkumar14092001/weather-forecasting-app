@@ -62,18 +62,6 @@ const TemperatureAndDetails = ({ data }) => {
                 <p className='font-light'>Set:
                     <span className='font-medium ml-1'>{setHours}:{setMinutes}</span>
                 </p>
-                <p className='font-light'>|</p>
-
-                <UilSun />
-                <p className='font-light'>High:
-                    <span className='font-medium ml-1'>{((data.main.temp_max - 32) * 5 / 9).toFixed(0)}°C</span>
-                </p>
-                <p className='font-light'>|</p>
-
-                <UilSun />
-                <p className='font-light'>Low:
-                    <span className='font-medium ml-1'>{((data.main.temp_min - 32) * 5 / 9).toFixed(0)}°C</span>
-                </p>
             </div>
         </div>
     )
